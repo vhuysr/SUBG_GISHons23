@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_287b47c2f4ccebc33a03898494036771 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_287b47c2f4ccebc33a03898494036771" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_287b47c2f4ccebc33a03898494036771 = L.map(
+                "map_287b47c2f4ccebc33a03898494036771",
+                {
+                    center: [-33.936191, 18.864862],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 20,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_526835c9e86ba3796df1c2653aa299d6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_287b47c2f4ccebc33a03898494036771);
+        
+    
+            var marker_5664854b9ad7893ecae5e29d2c26d57c = L.marker(
+                [-33.936191, 18.864862],
+                {}
+            ).addTo(map_287b47c2f4ccebc33a03898494036771);
+        
+    
+        var popup_bad1fc262125359ed494b10a238559ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74244a25bc8081b89947164c881747f9 = $(`<div id="html_74244a25bc8081b89947164c881747f9" style="width: 100.0%; height: 100.0%;"><strong>Stellenbosch Botanical Gardens</strong></div>`)[0];
+                popup_bad1fc262125359ed494b10a238559ea.setContent(html_74244a25bc8081b89947164c881747f9);
+            
+        
+
+        marker_5664854b9ad7893ecae5e29d2c26d57c.bindPopup(popup_bad1fc262125359ed494b10a238559ea)
+        ;
+
+        
+    
+    
+            marker_5664854b9ad7893ecae5e29d2c26d57c.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97b401208ba7b581abe3d566ef17ad21 = L.marker(
+                [-33.936235, 18.865318],
+                {}
+            ).addTo(map_287b47c2f4ccebc33a03898494036771);
+        
+    
+            var icon_affb6980de8132f88ca96755873cad43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_97b401208ba7b581abe3d566ef17ad21.setIcon(icon_affb6980de8132f88ca96755873cad43);
+        
+    
+        var popup_a3f77b232a144a87543039971b9fbdc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12c78cfefacb42ce2f34103e7d0bd0c1 = $(`<div id="html_12c78cfefacb42ce2f34103e7d0bd0c1" style="width: 100.0%; height: 100.0%;"><strong>Stellenbosch Botanical Gardens</strong></div>`)[0];
+                popup_a3f77b232a144a87543039971b9fbdc0.setContent(html_12c78cfefacb42ce2f34103e7d0bd0c1);
+            
+        
+
+        marker_97b401208ba7b581abe3d566ef17ad21.bindPopup(popup_a3f77b232a144a87543039971b9fbdc0)
+        ;
+
+        
+    
+    
+            marker_97b401208ba7b581abe3d566ef17ad21.bindTooltip(
+                `<div>
+                     Click for more info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_210e5118c0b54332d75533b7ff328126_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_210e5118c0b54332d75533b7ff328126 = L.geoJson(null, {
+                onEachFeature: geo_json_210e5118c0b54332d75533b7ff328126_onEachFeature,
+            
+        });
+
+        function geo_json_210e5118c0b54332d75533b7ff328126_add (data) {
+            geo_json_210e5118c0b54332d75533b7ff328126
+                .addData(data)
+                .addTo(map_287b47c2f4ccebc33a03898494036771);
+        }
+            geo_json_210e5118c0b54332d75533b7ff328126_add({"features": [{"geometry": {"coordinates": [[[18.864265748735846, -33.93586353713277], [18.864265748735846, -33.93605119298089], [18.864360475144423, -33.93605119298089], [18.864360475144423, -33.93586353713277], [18.864265748735846, -33.93586353713277]]], "type": "Polygon"}, "properties": {}, "type": "Feature"}, {"geometry": {"coordinates": [[[18.864370141104757, -33.935861131285925], [18.864370141104757, -33.93604878713929], [18.86444553559255, -33.93604878713929], [18.86444553559255, -33.935861131285925], [18.864370141104757, -33.935861131285925]]], "type": "Polygon"}, "properties": {}, "type": "Feature"}, {"geometry": {"coordinates": [[[18.864464867513277, -33.93585551764265], [18.864464867513277, -33.936037559878095], [18.86455186115421, -33.936037559878095], [18.86455186115421, -33.93585551764265], [18.864464867513277, -33.93585551764265]]], "type": "Polygon"}, "properties": {}, "type": "Feature"}, {"geometry": {"coordinates": [[18.865866093788327, -33.93593574433591], [18.86527544566667, -33.93598168543167], [18.864994887808507, -33.935914305149595], [18.864832459575155, -33.935843862071025], [18.864670031341774, -33.93585305030191], [18.864692180646045, -33.9360368147136], [18.86426026920668, -33.936082755753866], [18.864227045250203, -33.936134822236845], [18.864256577656647, -33.936312460586166], [18.864341483323898, -33.93644722046595], [18.864337791772783, -33.93654216479879], [18.86427503540989, -33.93660954458404], [18.864278726960947, -33.9367198022983], [18.864138448031923, -33.936744303993635], [18.864086766321122, -33.93683312257933], [18.863920646536684, -33.93686374965614], [18.86387265637694, -33.93690356483944]], "type": "LineString"}, "properties": {}, "type": "Feature"}, {"geometry": {"coordinates": [[18.864289801613097, -33.936603419150714], [18.8642233079037, -33.9365344630202], [18.864208968632568, -33.93640211246595], [18.864255571266398, -33.93630247764279]], "type": "LineString"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+</script>
+</html>
